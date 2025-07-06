@@ -1,7 +1,10 @@
 import google.generativeai as genai
 import os
+from dotenv import load_dotenv
 
-genai.configure(api_key="AIzaSyB1hnhglzCBt_FmqcFztcS-PovKjNhQpeM")
+load_dotenv()
+
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 model = genai.GenerativeModel("gemini-2.5-pro")
 
 def generate_documents(resume_text, job_description):

@@ -5,3 +5,4 @@ google-generativeai
 python-docx
 PyMuPDF
 jinja2
+python-dotenv
