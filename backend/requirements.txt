@@ -6,3 +6,4 @@ python-docx
 PyMuPDF
 jinja2
 python-dotenv
+google-adk
