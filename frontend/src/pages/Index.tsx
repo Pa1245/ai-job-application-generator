@@ -25,7 +25,7 @@ const Index = () => {
       formData.append('file', selectedFile);
       formData.append('job_description', jobDescription);
 
-      const response = await fetch('http://localhost:8000/generate', {
+      const response = await fetch('http://127.0.0.1:8000/generate', {
         method: 'POST',
         body: formData,
       });
